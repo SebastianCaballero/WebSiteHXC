@@ -66,43 +66,35 @@
                 </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-12 col-lg-3">
+              <div class="col-6 col-md-6 col-lg-3">
                   <div class="card text-white text-center bg-dark pb-2">
-                      <div class="card-body">
-                          <i class="bi bi-laptop"></i>
+                      <div class="card-body">                          
+                          <p id="days" class="lead">00</p>                        
                           <h3 class="card-title">Días</h3>
-                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                          <button class="btn bg-warning text-dark">Leer más</button>
                       </div>
                   </div>
               </div>
-                <div class="col-12 col-md-12 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3">
                     <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">
-                          <i class="bi bi-journal"></i>
+                        <div class="card-body">                                                      
+                            <p id="hours" class="lead">00</p>
                             <h3 class="card-title">Horas</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn bg-warning text-dark">Leer más</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3">
                     <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">
-                          <i class="bi bi-intersect"></i>
+                        <div class="card-body">                         
+                            <p id="minutes" class="lead">00</p>                            
                             <h3 class="card-title">Minutos</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn bg-warning text-dark">Leer más</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-3">
+                <div class="col-6 col-md-6 col-lg-3">
                     <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">
-                          <i class="bi bi-intersect"></i>
+                        <div class="card-body">                                                      
+                            <p id="seconds" class="lead">00</p>                            
                             <h3 class="card-title">Segundos</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn bg-warning text-dark">Leer más</button>
                         </div>
                     </div>
                 </div>
@@ -469,6 +461,32 @@
 
 
     <!-- All Js -->
+    <script>
+        var countDownDate = new Date("Feb 9, 2024 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+
+        }, 1000);
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 

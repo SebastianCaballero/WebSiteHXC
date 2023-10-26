@@ -1,0 +1,65 @@
+:root {
+    --full-white: #FFFFFF;
+    --kind-black: #010C03;
+    --king-blue: #006FB9;
+    --clear-blue: #A3C2E6;
+    --almost-king-blue: #336799;
+    --wine-red: #5D0024;
+    --darker-blue: #002E6D;
+    --car-red: #C3002F;
+    --third-grey: #686463;
+    --second-grey: #858482;
+    --first-grey: #DCDCD7;
+}
+
+
+/* General styles for all sections */
+body {
+    background-color: var(--full-white);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Navbar styles_____________________________________________________ */
+.navbar {
+  
+}
+  /* ... */
+
+  /* Hero content styles_____________________________________________________ */
+.hero-content {
+    
+}
+  /* ... */
+
+  /* Event info styles_____________________________________________________ */
+.event-info {
+    /* ... */
+}
+  /* ... */
+
+  /* Inscription styles_____________________________________________________ */
+.inscription {
+    /* ... */
+}
+  /* ... */
+
+  
+  /* Videos styles_____________________________________________________ */
+.videos {
+    /* ... */
+}
+  /* ... */
+  
+  /* Resources styles_____________________________________________________ */
+.resources {
+    /* ... */
+}
+  /* ... */
+
+  /* Footer styles_____________________________________________________ */
+.footer {
+    /* ... */
+}
+  /* ... */

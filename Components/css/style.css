@@ -200,7 +200,7 @@ body {
 }
 
 .line {
-    width: 100%;
+    width: 80%;
     border-top: 2px solid var(--wine-red); /* You can adjust the color and style as needed */
     margin: 0 auto; /* Center the line horizontally */
 }

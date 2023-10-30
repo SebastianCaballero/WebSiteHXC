@@ -13,41 +13,48 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><span class="text-warning">Hack</span> por Colombia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recuros de apoyo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Videos</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Mentores</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">¡Inscríbete aquí!</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#team">Icono</a>
-              </li>                 
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-wine-red fixed-top">
+        <div class="container h-100">
+            <img class="logo" src="./img/logoHXC.png" alt="HackPorColombia" class="navbar-logo">
+            <div class="openMenu">
+                <span class="navbar-toggler-icon"></span>
+            </div>
+            <ul class="mainMenu navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#recursos">Recuros de apoyo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reglas">¿Quiénes pueden participar?</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#mentores">Mentores</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#inscripcion">¡Inscríbete aquí!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto"><i class="bi bi-telephone-inbound-fill"></i></a>
+                </li>
+                <div class="closeMenu"><i class="bi bi-x-circle-fill"></i></div>          
+            </ul>            
         </div>
-      </nav>
+    </nav>
     
-      <section class="services section-padding-1" id="services">
+      <section class="services services-bg section-padding-1" id="services">
           <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>BIENVENIDO/A “HACK POR COLOMBIA: CONSTRUYENDO ACCESO A LA JUSTICIA</h2>
-                        <p>¿Tienes una idea que contribuya a mejorar el acceso a la justicia en tu territorio? Esta es tu oportunidad de ser parte de la solución.</p>
+                    <div class="section-header-bg section-header text-center p-2 m-1">
+                        <h1 class="main-title">BIENVENIDO/A “HACK POR COLOMBIA: CONSTRUYENDO ACCESO A LA JUSTICIA</h1>
+                        <p class="sub-title">¿Tienes una idea que contribuya a mejorar el acceso a la justicia en tu territorio? Esta es tu oportunidad de ser parte de la solución.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="section-header text-center p-1 h-100">
+                        <p> <strong>“Hack_Por_Colombia: Construyendo Acceso a la Justicia”</strong>  tiene como objetivo central promover el empoderamiento de jóvenes a través de la creación de soluciones innovadoras que fortalezcan el acceso a la justicia, así como la satisfacción y confianza en el sistema de justicia en Colombia.</p>
+                        <p>Un total de 50 jóvenes de diversos municipios de nuestro país se reunirán los días 10 y 11 de febrero de 2024 en la ciudad de Cali, con el propósito de abordar un interesante reto relacionado con el desarrollo de un modelo o herramienta que contribuya a mejorar el acceso a la justicia y fortalecer la confianza en las instituciones en el contexto de la era de transformación digital.</p>
                     </div>
                 </div>
             </div>
@@ -57,66 +64,82 @@
       <section class="services section-padding-2" id="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>MUY PRONTO...</h2>
-                        <p>“Hack_Por_Colombia: Construyendo Acceso a la Justicia” tiene como objetivo central promover el empoderamiento de jóvenes a través de la creación de soluciones innovadoras que fortalezcan el acceso a la justicia, así como la satisfacción y confianza en el sistema de justicia en Colombia.</p>
-                        <p>Un total de 50 jóvenes de diversos municipios de nuestro país se reunirán los días 10 y 11 de febrero de 2024 en la ciudad de Cali, con el propósito de abordar un interesante reto relacionado con el desarrollo de un modelo o herramienta que contribuya a mejorar el acceso a la justicia y fortalecer la confianza en las instituciones en el contexto de la era de transformación digital.</p>
+                <div class="col-6 col-md-6 col-lg-3 p-2">
+                    <div class="card text-white text-center p-0 h-100">
+                        <div class="card-top bg-darker-blue h-75">
+                            <p id="days" class="card-body lead-p m-0">00</p>                                                                        
+                        </div>
+                        <div class="card-down bg-wine h-25">                                                  
+                            <p class="card-body lead m-0">DÍAS</p>                        
+                        </div>
+                    </div>
+                </div>
+              <div class="col-6 col-md-6 col-lg-3 p-2">
+                <div class="card text-white text-center p-0 h-100">
+                    <div class="card-top bg-darker-blue h-75">
+                        <p id="hours" class="card-body lead-p m-0">00</p>                                                                        
+                    </div>
+                    <div class="card-down bg-wine h-25">                                                  
+                        <p class="card-body lead m-0">HORAS</p>                        
                     </div>
                 </div>
             </div>
-            <div class="row">
-              <div class="col-6 col-md-6 col-lg-3">
-                  <div class="card text-white text-center bg-dark pb-2">
-                      <div class="card-body">                          
-                          <p id="days" class="lead">00</p>                        
-                          <h3 class="card-title">Días</h3>
-                      </div>
-                  </div>
-              </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">                                                      
-                            <p id="hours" class="lead">00</p>
-                            <h3 class="card-title">Horas</h3>
+                <div class="col-6 col-md-6 col-lg-3 p-2">
+                    <div class="card text-white text-center p-0 h-100">
+                        <div class="card-top bg-darker-blue h-75">
+                            <p id="minutes" class="card-body lead-p m-0">00</p>                                                                        
+                        </div>
+                        <div class="card-down bg-wine h-25">                                                  
+                            <p class="card-body lead m-0">MINUTOS</p>                        
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">                         
-                            <p id="minutes" class="lead">00</p>                            
-                            <h3 class="card-title">Minutos</h3>
+                <div class="col-6 col-md-6 col-lg-3 p-2">
+                    <div class="card text-white text-center p-0 h-100">
+                        <div class="card-top bg-darker-blue h-75">
+                            <p id="seconds" class="card-body lead-p m-0">00</p>                                                                        
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3">
-                    <div class="card text-white text-center bg-dark pb-2">
-                        <div class="card-body">                                                      
-                            <p id="seconds" class="lead">00</p>                            
-                            <h3 class="card-title">Segundos</h3>
+                        <div class="card-down bg-wine h-25">                                                  
+                            <p class="card-body lead m-0">SEGUNDOS</p>                        
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row p-3">
+            <div class="row pt-3">
                 <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <p>El evento se llevará a cabo el 10 y 11 de febrero del 2024 en la ciudad de Cali. ¡Tú podrás ser uno de los 50 jóvenes que participen de esta increíble competencia!</p>
+                    <div class="section-header text-center">
+                        <p>¡Tú podrás ser uno de los 50 jóvenes que participen de esta increíble competencia!</p>
                         <p>Para conocer los Términos y Condiciones de la competencia haz clic aquí.</p>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <button class="btn bg-warning text-dark"><a class="btn bg-warning text-dark" href="https://842sgev99it.typeform.com/to/EKETpFuH">Inscríbete aquí</a></button>
+                    <div class="section-header text-center">
+                        <button class="btn"><a class="btn bg-wine text-white" target="_blank" href="https://842sgev99it.typeform.com/to/EKETpFuH">¡Inscríbete!</a></button>
                     </div>
                 </div>
             </div>
+
+            <div class="m-2 line"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center p-2 m-1">
+                            <h2 class="main-title">¿Qué es un Hackathon?</h2>
+                            <div class="mb-3 line-soft"></div>
+                            <p>Un Hackathon es un evento de trabajo intenso que reúne perfiles diversos para que un tiempo determinado trabajen en la solución de un reto de forma colaborativa, contando con recursos como mentores, espacios de retroalimentación y premiación para los participantes. El uso de herramientas innovadoras y  tecnológicas es fundamental para la competencia, pero no te preocupes si no eres un programador avanzado, lo importante es que tengas conocimientos o experiencia empírica, académica y/o profesional en el área de Justicia en Colombia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reglas" class="m-2 line"></div>
+
             <div class="row p-3">
                 <div class="col-md-12">
                     <div class="container section-header pb-5">
-                        <h3>¿QUIÉNES PUEDEN PARTICIPAR?</h3>
-                    
+                        <h3 class="main-title">¿QUIÉNES PUEDEN PARTICIPAR?</h3>
+                        <div class="mb-3 line-soft"></div>
                         <div class="mt-4">
                             <p><strong>1.</strong> Jóvenes de nacionalidad colombiana entre los 18 y 28 años en calidad de persona natural.</p>
                         </div>
@@ -170,238 +193,200 @@
                     </div>
                 </div>
             </div>
+            <div class="m-2 line"></div>
         </div>
     </section>
     <!-- services section Ends -->
 
     <!-- Introduction section Ends -->
-    <section class="services section-padding-2" id="services">
+    <section class="services section-padding-2" id="inscripcion">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-header text-center pb-5">
-                        <h2>Formulario de Inscripción</h2>
-                        <button class="btn bg-warning text-dark">Formulario de inscripción</button>
-                        <img src="" alt="">
+                        <h2 class="main-title">Formulario de Inscripción</h2>
+                        <button class="btn mb-3"><a class="btn bg-wine text-white" target="_blank" href="https://842sgev99it.typeform.com/to/EKETpFuH">Formulario de Inscripción</a></button>
                         <p>El formulario de inscripción estará habilitado desde el lunes 30 de octubre a las 9:00 a.m. hasta el domingo 12 de noviembre a las 11:59 p.m.  Una vez finalizado este tiempo,  no podrás registrarte para participar en el evento.</p>
-                        <p>A continuación, encontrarás los términos y condiciones del evento <Hack_Por_Colombia>: Construyendo Acceso a la Justicia.  Estos términos y condiciones rigen tu participación en este evento, por lo que te recomendamos que los leas detenidamente. Al diligenciar el formulario de inscripción, aceptas cumplir con estos en su totalidad. </p>
-                        <button class="btn bg-warning text-dark">Términos y COndiciones</button>
-                        <p>Este formato es el único formulario habilitado para el registro a <Hack_Por_Colombia>: Construyendo Acceso a la Justicia*. Extendemos una especial invitación  a personas de la comunidad LGBTIQ+, comunidades Afro, Indígenas, Palenqueras, Negras, Rrom y  mujeres jóvenes a ser parte de Hack_Por_Colombia>: Construyendo Acceso a la Justicia.  El verdadero poder está en la diversidad y representatividad.</p>
+                        <p>A continuación, encontrarás los términos y condiciones del evento <strong>Hack_Por_Colombia</strong>: Construyendo Acceso a la Justicia.  Estos términos y condiciones rigen tu participación en este evento, por lo que te recomendamos que los leas detenidamente. Al diligenciar el formulario de inscripción, aceptas cumplir con estos en su totalidad. </p>
+                        <button class="btn mb-3"><a class="btn bg-wine text-white" target="_blank" href="https://842sgev99it.typeform.com/to/EKETpFuH">Términos y condiciones</a></button>
+                        <p>Este formato es el único formulario habilitado para el registro a <strong>Hack_Por_Colombia</strong>: Construyendo Acceso a la Justicia*. </p>
+                        <p>*Extendemos una especial invitación a personas de la comunidad LGBTIQ+, comunidades Afro, Indígenas, Palenqueras, Negras, Rrom y mujeres jóvenes a ser parte <strong>Hack_Por_Colombia</strong>: Construyendo Acceso a la Justicia.  El verdadero poder está en la diversidad y representatividad.</p>
                     </div>
                 </div>
             </div>
+            <div class="m-4 line"></div>
         </div>
     </section>
     <!-- Introduction section Ends -->
 
     <!-- portfolio strats -->
-    <section id="portfolio" class="portfolio section-padding-2">
+    <section id="mentores" class="portfolio section-padding-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>¡Conoce a nuestros mentores y jurados!</h2>
+                    <div class="section-header text-center pb-2">
+                        <h2 class="main-title">¡Conoce a nuestros mentores y jurados!</h2>
                         <p>Ellos son los encargados de  acompañarte, guiarte y resolver todas tus dudas  durante la competencia frente a las áreas de  Innovación y Sostenibilidad, Programación y Desarrollo de Software,  y Justicia.  También serán quienes evalúen y seleccionen la propuesta ganadora.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-light text-center bg-white pb-2">
+                <div class="col-12 col-md-12 my-2">
+                    <div class="card text-light text-center bg-white pb-2 h-100">
                         <div class="card-body text-dark">
                           <div class="img-area mb-4">
                               <img src="img/mentor-1.jpg" class="img-fluid" alt="">
                           </div>
-                            <h3 class="card-title">Juanita López Patrón</h3>
-                            <h4 class="card-title">Directora Técnica Programa Justicia Inclusiva de USAID (JUSTICIA)</h4>
-                            <p class="lead">ExViceministra de Promoción de la Justicia, cuenta con 15 años de experiencia en el sector público, en diferentes ramas del poder público. Fue partícipe en la consolidación y  puesta en marcha de la Agencia Nacional de Defensa Jurídica del Estado.</p>
+                            <h3 class="card-title color-name">Juanita López Patrón</h3>
+                            <h4 class="card-title color-title">Directora Técnica Programa Justicia Inclusiva de USAID</h4>
+                            <h5 class="card-title color-darker-blue">Área Justicia</h5>
+                            <p class="lead">ExViceministra de Promoción de la Justicia, cuenta con 15 años de experiencia en el sector público, en diferentes ramas del poder público. Fue partícipe en la consolidación y puesta en marcha de la Agencia Nacional de Defensa Jurídica del Estado.</p>
                             <p class="lead">Como Viceministra de Promoción de la Justicia lideró programas exitosos que lograron posicionarse en la agenda pública tanto gubernamental como legislativa para mejorar sustantivamente el acceso a la justicia: justicia digital, justicia rural y justicia inclusiva; así como el mayor uso de métodos de resolución de conflictos.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-light text-center bg-white pb-2">
+                <div class="col-12 col-md-12 my-2">
+                    <div class="card text-light text-center bg-white pb-2 h-100">
                         <div class="card-body text-dark">
                           <div class="img-area mb-4">
                               <img src="img/mentor-2.png" class="img-fluid" alt="">
                           </div>
-                            <h3 class="card-title">Camilo Rocha</h3>
-                            <h4 class="card-title">Decano Facultad de Ingeniería y Ciencias, PUJ Cali. (PROGRAMACIÓN)</h4>
+                            <h3 class="card-title color-name">Camilo Rocha</h3>
+                            <h4 class="card-title color-title">Decano Facultad de Ingeniería y Ciencias, PUJ Cali.</h4>
+                            <h5 class="card-title color-darker-blue">Área Programación</h5>
                             <p class="lead">Decano de la facultad de ingeniería de la Pontificia Universidad Javeriana de Cali. Cuenta con amplia experiencia en proyectos de investigación fundamental, investigación aplicada y consultoría en métodos formales e inteligencia artificial. Ha sido docente e investigador en áreas de computación, matemáticas y biología, que incluyen la creación de nuevos lenguajes de programación para misiones espaciales autónomas; técnicas algorítmicas, simbólicas y probabilísticas.</p>
                             <p class="lead">Ha sido investigador principal y co-investigador en proyectos de gran escala financiados con fondos nacionales e internacionales, ha dirigido a estudiantes de pregrado, maestría y doctorado, y ha sido galardonado con reconocimientos internacionales como Amazon Research Awards.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-light text-center bg-white pb-2">
+                <div class="col-12 col-md-12my-2">
+                    <div class="card text-light text-center bg-white pb-2 h-100">
                         <div class="card-body text-dark">
                           <div class="img-area mb-4">
                               <img src="img/mentor-3.png" class="img-fluid" alt="">
                           </div>
-                            <h3 class="card-title">Carolina Montoya</h3>
-                            <h4 class="card-title">Coordinadora regional, ImpactHub Cali.(INNOVACIÓN Y SOSTENIBILIDAD)</h4>
-                            <p class="lead">Coordinadora de Impact Hub Cali, comunidad de emprendimiento e innovación en +60 países, +100 ubicaciones y +16.500 miembros. Apasionada, emprendedora, enamorada de la innovación, la estrategia empresarial y el emprendimiento.</p>
-                            <p class="lead">Siempre buscando aprender algo nuevo cada día y brindando todo mi conocimiento y experiencia para adquirir los mejores resultados.</p>
+                            <h3 class="card-title color-name">Carolina Montoya</h3>
+                            <h4 class="card-title color-title">Coordinadora regional, ImpactHub Cali.</h4>
+                            <h5 class="card-title color-darker-blue">Área Innovación y Sostenibilidad</h5>
+                            <p class="lead">Coordinadora de Impact Hub Cali, comunidad de emprendimiento e innovación en +60 países, +100 ubicaciones y +16.500 miembros.</p>
+                            <p class="lead">Apasionada, emprendedora, enamorada de la innovación, la estrategia empresarial y el emprendimiento.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-light text-center bg-white pb-2">
+                <div class="col-12 col-md-12 my-2">
+                    <div class="card text-light text-center bg-white pb-2 h-100">
                         <div class="card-body text-dark">
                           <div class="img-area mb-4">
                               <img src="img/mentor-4.png" class="img-fluid" alt="">
                           </div>
-                            <h3 class="card-title">Juan Manuel Madrid</h3>
-                            <h4 class="card-title">Profesor de la Facultad de Ingeniería, Diseño y Ciencias Aplicadas.(DESARROLLO DE SOFTWARE)</h4>
-                            <p class="lead">Profesor e investigador en temas de Seguridad de la Información, Ciberseguridad, Sistemas Operativos y Robótica. </p>
+                            <h3 class="card-title color-name">Juan Manuel Madrid</h3>
+                            <h4 class="card-title color-title">Profesor de la Facultad de Ingeniería, Diseño y Ciencias Aplicadas.</h4>
+                            <h5 class="card-title color-darker-blue">Área Desarrollo de Software</h5>
+                            <p class="lead">Profesor e investigador en temas de Seguridad de la Información, Ciberseguridad, Sistemas Operativos y Robótica.</p>
                             <p class="lead">Cuenta con una Maestría en Ciencias enfocada en Seguridad de la Información de Nova Southeastern University. Actualmente se desempeña como docente del Departamento de Computación y Sistemas Inteligentes de la universidad ICESI de Cali.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-light text-center bg-white pb-2">
-                        <div class="card-body text-dark">
-                          <div class="img-area mb-4">
-                              <img src="img/mentor-5.jpg" class="img-fluid" alt="">
-                          </div>
-                            <h3 class="card-title">Maria Camila Barrera</h3>
-                            <h4 class="card-title">Especialista en Sistemas Locales de Justicia, CJ y CCC, Programa JI. (JUSTICIA)</h4>
-                            <p class="lead">Politóloga e internacionalista especializada en Resolución de Conflictos. Experiencia en investigación, gestión de proyectos e intervención social en construcción de paz, equidad de género, víctimas, derechos humanos, resolución de conflictos y acceso a la justicia</p>
-                            <p class="lead">Conciliadora en Equidad comprometida con la gestión pacífica de conflictos en Colombia.</p>
-                        </div>
+                <div class="col-12 col-md-12 my-2">
+                    <div class="card text-light text-center bg-white pb-2 h-100">
+                        <div class="display-row card-body text-dark">
+                            <div class="item img-area mb-4">
+                                <img src="img/mentor-5.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="item">
+                                <h3 class="card-title color-name">Maria Camila Barrera</h3>
+                                <h4 class="card-title color-title">Especialista en Sistemas Locales de Justicia, CJ y CCC, Programa JI.</h4>
+                                <h5 class="card-title color-darker-blue">Área Justicia</h5>
+                                <p class="lead">Politóloga e internacionalista especializada en Resolución de Conflictos. Experiencia en investigación, gestión de proyectos e intervención social en construcción de paz, equidad de género, víctimas, derechos humanos, resolución de conflictos y acceso a la justicia.</p>
+                                <p class="lead">Conciliadora en Equidad comprometida con la gestión pacífica de conflictos en Colombia.</p>                          
+                            </div>
+                        </div>                        
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
+        <div class="m-4 line"></div>
       </section>
       <!-- portfolio ends -->
 
 
-      <section class="services section-padding" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>Recursos de apoyo eficaces</h2>
-                        <p>Te invitamos a explorar nuestro repositorio, donde encontrarás valiosos recursos de nivelación diseñados para la Hackatón. Para acceder, simplemente haz clic aqui.</p>
-                    </div>
+      <section class="services section-padding" id="recursos">
+        <div class="container">            
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2 class="main-title">Recursos de apoyo eficaces</h2>
+                    <p>Te invitamos a explorar nuestro repositorio, donde encontrarás valiosos recursos de nivelación diseñados para la Hackatón. Para acceder, simplemente haz clic aqui.</p>
                 </div>
             </div>
             <div class="row">
-              <div class="col-12 col-md-12 col-lg-4">
-                  <div class="card text-white text-center bg-dark pb-2">
-                      <div class="card-body">
-                          <i class="bi bi-laptop"></i>
-                          <h3 class="card-title">Bases de datos</h3>
-                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                          <button class="btn bg-warning text-dark">Leer más</button>
-                      </div>
-                  </div>
-              </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-white text-center bg-dark pb-2">
+                    <div class="card text-dark text-center pb-2 h-100">
                         <div class="card-body">
-                          <i class="bi bi-journal"></i>
+                            <div style="display: flex; justify-content: center; align-items: center; ">
+                                <img src="./img/icono 1 1.png" alt="">
+                            </div>                            
+                            <h3 class="card-title">Bases de datos</h3>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <div class="m-4 line-soft"></div>
+                            </div>
+                            <p class="lead">Utiliza esta herramienta para herramienta para recopilar, organizar  y manipular información de forma eficiente orientándolo hacia tu propuesta.</p>
+                            <button class="btn btn-primary text-dark" disabled>Leer más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-dark text-center pb-2 h-100">
+                        <div class="card-body">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <img src="./img/libro-abierto 1.png" alt="">
+                            </div>                             
                             <h3 class="card-title">HandBook del Hackathon</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn bg-warning text-dark">Leer más</button>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <div class="m-4 line-soft"></div>
+                            </div>
+                            <p class="lead">Descubre las reglas y pautas para la hackathon, el conjunto de requerimientos para triunfar. ¡Prepárate para la innovación!</p>
+                            <button class="btn btn-primary text-dark" disabled>Leer más</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-white text-center bg-dark pb-2">
+                    <div class="card text-dark text-center pb-2 h-100">
                         <div class="card-body">
-                          <i class="bi bi-intersect"></i>
+                            <div style="display: flex; justify-content: center; align-items: center; ">
+                                <img src="./img/lista-de-verificacion 1.png" alt="">
+                            </div>                         
                             <h3 class="card-title">Reglamento del Hackathon</h3>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p>
-                            <button class="btn bg-warning text-dark">Leer más</button>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <div class="m-4 line-soft"></div>
+                            </div>
+                            <p class="lead">Encuentra aquí el reglamento oficial de la hackathon, reglas y deberes de la competición. ¡Lee las normas antes de empezar!</p>
+                            <button class="btn btn-primary text-dark" disabled>Leer más</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <img src="img/Icono1 Data.png" alt="" class="img-fluid rounded-circle">
-                        <h3 class="card-title py-2">Bases de Datos</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <img src="img/Icono2 Sostenibilidad.png" alt="" class="img-fluid rounded-circle">
-                        <h3 class="card-title py-2">Handbook</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <img src="img/Icono3 Crecimiento.png" alt="" class="img-fluid rounded-circle">
-                        <h3 class="card-title py-2">Términos</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>                      
+            </div>            
         </div>
     </section>
     <!-- services section Ends -->
-
-    <!-- Contact starts -->
-    <section id="contact" class="contact section-padding-2">
-      <div class="container mt-5 mb-5">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="section-header text-center pb-5">
-                      <h2>Contact Us</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Non, quo.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="row m-0">
-              <div class="col-md-12 p-0 pt-4 pb-4">
-                  <form action="#" class="bg-light p-4 m-auto">
-                      <div class="row">
-                          <div class="col-md-12">
-                              <div class="mb-3">
-                                  <input class="form-control" placeholder="Full Name" required="" type="text">
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="mb-3">
-                                  <input class="form-control" placeholder="Email" required="" type="email">
-                              </div>
-                          </div>
-                          <div class="col-md-12">
-                              <div class="mb-3">
-                                  <textarea class="form-control" placeholder="Message" required="" rows="3"></textarea>
-                              </div>
-                          </div><button class="btn btn-warning btn-lg btn-block mt-3" type="button">Send Now</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    </section>
-    <!-- contact ends -->
+    
 
     <!-- Introduction section Ends -->
     <section class="services section-padding-2" id="services">
         <div class="container">
-            <div class="row">
+            <div class="row mb-0">
                 <div class="col-md-12">
                     <div class="section-header text-center pb-5">
-                        <h2>¿Tienes alguna duda?</h2>                        
-                        <p>El viernes 10 de noviembre a las 9:00 a.m. realizaremos una sesión de preguntas para aclarar las dudas que tengas frente a la convocatoria. Esta se realizará a través de la cuenta de Instagram de la Fundación Colombia 2050 (@fundacioncolombia2050).    Si quieres compartirnos  tus preguntas o inquietudes, puedes contactarnos previamente a través del correo electrónico [lauramora@fundacioncolombia2050.org] indicando en el asunto: “Dudas Hack por colombia”</p>                    
-                        <br>ESTAMOS MUY FELICES DE  QUE HAGAS PARTE DE  <strong>Hack_Por_Colombia </strong>: Construyendo Acceso a la Justicia. ¡NOS VEMOS PRONTO!</p>
+                        <h2 class="main-title">¿Tienes alguna duda?</h2>                        
+                        <p>El viernes 10 de noviembre a las 9:00 a.m. realizaremos una sesión de preguntas para aclarar las dudas que tengas frente a la convocatoria. Esta se realizará a través de la cuenta de Instagram de la Fundación Colombia 2050 (<span style="color: #006FB9;">@fundacioncolombia2050</span>).</p> 
+                        <p>Si quieres compartirnos  tus preguntas o inquietudes, puedes contactarnos previamente a través del correo electrónico [<span style="color: #006FB9;">lauramora@fundacioncolombia2050.org</span>] indicando en el asunto: “Dudas Hack por colombia”.</p>                    
+                        <h4 class="mt-5 main-title">ESTAMOS MUY FELICES DE  QUE HAGAS PARTE DE  <strong>Hack_Por_Colombia </strong>: Construyendo Acceso a la Justicia.</h4>
+                        <h4 class="main-title">¡NOS VEMOS PRONTO!</h4>
                     </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <div class="col-md-12 img-resp-al">
+                    <img class="image-resp" src="./img/mesa.png" alt="Mesa de Trabajo">
                 </div>
             </div>
         </div>
@@ -409,7 +394,7 @@
     <!-- Introduction section Ends -->
 
     <!-- footer starts -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-light-blue text-center text-dark">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
           <!-- Section: Form -->
@@ -420,7 +405,7 @@
                 <!--Grid column-->
                 <div class="col-auto">
                   <p class="pt-2">
-                    <strong>Logo USAID</strong>
+                    <img class="image-resp logo" src="./img/USAID_Horiz_Spanish_RGB_2-Color.png" alt="USAID">
                   </p>
                 </div>
                 <!--Grid column-->
@@ -438,7 +423,7 @@
                 <!--Grid column-->
                 <div class="col-auto">
                   <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
+                  <button type="submit" class="btn bg-darker-blue text-light mb-4">
                     Enviar
                   </button>
                 </div>
@@ -452,7 +437,7 @@
         <!-- Grid container -->
       
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3">
             La información publicada en este sitio no es información oficial del gobierno de Estados Unidos y no representa los puntos de vista o posiciones de la Agencia de Estados Unidos para el Desarrollo Internacional ni del gobierno de Estados Unidos.
         </div>
         <!-- Copyright -->
@@ -486,9 +471,33 @@
             }
 
         }, 1000);
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+        const menu_items = document.querySelectorAll('nav .mainMenu li a');
+
+
+
+
+        openMenu.addEventListener('click',show);
+        closeMenu.addEventListener('click',close);
+
+        // close menu when you click on a menu item 
+        menu_items.forEach(item => {
+            item.addEventListener('click',function(){
+                close();
+            })
+        })
+
+        function show(){
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close(){
+            mainMenu.style.top = '-100%';
+        }
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 
     <!-- Import Bootstrap JS and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
